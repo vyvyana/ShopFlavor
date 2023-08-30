@@ -1,0 +1,85 @@
+:root {
+  --foreground-color: #f9423a;
+  --background-color: #fff0e0;
+  --detail-foreground: #166938;
+  --detail-background: #f7e8d0;
+  --sign-color: #903534;
+  --sign-boder: #7e9373;
+  --sign-background: #f2daaa;
+}
+
+.detail-left {
+  margin: auto 50px;
+  margin-left: 0;
+}
+.detail-title {
+  font-family: "Caprasimo", cursive;
+  font-size: 25px;
+  font-weight: 600px;
+  color: currentColor;
+}
+.detail-variant {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.detail-sub {
+  border: 3px solid var(--detail-foreground);
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding: 10px;
+}
+.detail-sub input {
+  margin-right: 10px;
+}
+.detail-cart {
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: url(../images/cursor-image-small.png) 0 15, auto;
+}
+.detail-cart button {
+  height: 48px;
+  cursor: pointer;
+  width: 100%;
+  color: var(--detail-background);
+  background-color: var(--detail-foreground);
+}
+.detail-select {
+  margin: 50px auto;
+  margin-top: 20px;
+}
+.detail-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+
+.container {
+  background-color: var(--detail-background);
+  color: var(--detail-foreground);
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+  font-size: 18px;
+}
+
+.flavor-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.flavor-link {
+  cursor: url(../images/cursor-image-small.png) 0 15, auto;
+}
+.flavor-img:hover {
+  box-shadow: 0 0 0 2px var(--foreground-color), 0 0 0 3px var(--background-color);
+  border-radius: 100rem;
+  transition: all 0.35s linear;
+}
+
+/*# sourceMappingURL=detail.css.map */
